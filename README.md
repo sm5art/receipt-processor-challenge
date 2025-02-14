@@ -1,5 +1,33 @@
 # Receipt Processor
 
+## To Run the SOLUTION here
+The solution uses fast api and python to solve the issue, please make sure you have python 3 installed
+
+### Setup
+```
+$ virtualenv venv
+```
+
+```
+$ pip install -r requirements.txt
+```
+
+### Running the server and examples
+
+```
+. venv/bin/activate
+```
+
+```
+$ fastapi dev server.py
+```
+
+```
+$ python test.py
+```
+
+
+
 Build a webservice that fulfils the documented API. The API is described below. A formal definition is provided 
 in the [api.yml](./api.yml) file. We will use the described API to test your solution.
 
