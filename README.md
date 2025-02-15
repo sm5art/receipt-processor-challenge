@@ -3,23 +3,15 @@
 ## To Run the SOLUTION here
 The solution uses fast api and python to solve the issue, please make sure you have python 3 installed
 
-### Setup
+### Build docker image
 ```
-$ virtualenv venv
-```
-
-```
-$ pip install -r requirements.txt
+$ docker build -t receipt-processor .
 ```
 
 ### Running the server and examples
 
 ```
-. venv/bin/activate
-```
-
-```
-$ fastapi dev server.py
+$ docker run --name rcpt-processor -p 8000:8000 receipt-processor
 ```
 
 ```

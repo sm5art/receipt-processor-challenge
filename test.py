@@ -57,9 +57,11 @@ def main():
 
     response = requests.post('http://127.0.0.1:8000/receipts/process', json=receipt_example_2) 
     given_id = response.json()['id']
+    #print(response.headers)
     # send a get request to http://127.0.0.1:8000/receipts/<given_id>/points with the given id as path parameter
     response = requests.get('http://127.0.0.1:8000/receipts/' + str(given_id) + '/points') 
     print(response.text)
+    #print(response.headers)
 
 
 
