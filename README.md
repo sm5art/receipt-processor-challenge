@@ -8,10 +8,16 @@ The solution uses fast api and python to solve the issue, please make sure you h
 $ docker build -t receipt-processor .
 ```
 
-### Running the server and examples
+### Running the server and examples test
 
 ```
 $ docker run --name rcpt-processor -p 8000:8000 receipt-processor
+```
+Server should now be running at 127.0.0.1:8000 with api endpoints below
+
+#### Running the tests
+```
+$ docker exec -it rcpt-processor /bin/bash
 ```
 
 ```
